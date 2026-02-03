@@ -33,15 +33,14 @@ public static void main(String[] args) {
         
         System.out.print("Enter age for student> ");
         CrlF4.age = sc.nextInt();
-        
-        sc.nextLine(); // Clear buffer
+        sc.nextLine(); 
         System.out.print("Enter course for student>"
                 + " :3 ");
         CrlF4.course = sc.nextLine();
 
         System.out.println();
 
-        // Create second student
+        // Second student
         Student FixGrade = new Student();
         System.out.print("Enter name for student> ");
         FixGrade.name = sc.nextLine();
@@ -54,10 +53,7 @@ public static void main(String[] args) {
         FixGrade.course = sc.nextLine();
 
         System.out.println();
-
-        //Tada
-       
         CrlF4.displayInfo();
         FixGrade.displayInfo();
-    }
+ }
 }
